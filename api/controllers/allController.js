@@ -1,6 +1,6 @@
 'use strict';
 
-var mongoose = require('mongose'),
+const mongoose = require('mongoose'),
     tasks = mongoose.model('Tasks');
 exports.listTasks = (req, res) => {
   tasks.find({}, (err,task) =>{

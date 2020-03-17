@@ -1,5 +1,5 @@
 'use strict';
-var mongoose = require('mongose');
+var mongoose = require('mongoose');
 var schema = mongoose.Schema;
 
 var taskSchema = new schema({
@@ -19,3 +19,5 @@ var taskSchema = new schema({
         default: ['not started']
     }
 });
+
+module.exports = mongoose.model('Tasks', taskSchema);

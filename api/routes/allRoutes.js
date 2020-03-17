@@ -1,6 +1,6 @@
 'use strict';
 module.exports = (app) => {
-  var allFunctions = require('../controllers/allController');
+  const allFunctions = require('../controllers/allController');
 
   app.route('/tasks')
       .get(allFunctions.listTasks)
