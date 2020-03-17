@@ -1,5 +1,5 @@
 'use strict';
-module.exports = function (app) {
+module.exports = (app) => {
   var allFunctions = require('../controllers/allController');
 
   app.route('/tasks')
